@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <h1>Student Info</h1>
+    <form action="example.php" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="first_name" id="fname">
+        <br>
+        
+        <label for="email">Email</label>
+        <input type="text" name="stu_mail" ip="email" required placeholder="1bc@gmail.com">
+        <br>
+
+        <label for="password">Type Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <label for="DOB">Date of Birth</label>
+        <input type="date" name="stu_dob" id="DOB">
+        <br>
+
+        <label for="photo">Photo</label>
+        <input type="file" accept=".png" name="stu_Photo" id="photo">
+        <br>
+
+        <label for="ph">Phone Number</label>
+        <input type="number" name="stu-number" id="ph">
+        <br>
+
+        <label for="">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+
+        <br>
+        <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+
+        <br>
+        <label for="year">year</label>
+        <select name="stu_year" id="year">
+            <option value=""> Choose years</option>
+            <option value="1">First year</option>
+            <option value="2">Second year</option>
+            <option value="3">Third year</option>
+        </select><br>
+
+        <label for="">Hobby</label><br>
+        <input type="checkbox" name="travelling" id="travelling" valule="travelling"><label for="travelling">Travelling</label>
+        <br>
+        <input type="checkbox" name="reading" id="reading" valule="reading"><label for="reading">Reading</label>
+        <br>
+        <input type="checkbox" name="eating" id="eating" valule="eatling"><label for="eatling">eating</label>
+        <br>
+
+
+        <br>
+        <label for="address">Address</label>
+        <textarea name="stu_address" id="address" cols="30" rows="10">Address</textarea>
+        <br>
+
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+        <br>
+
+        <label for="date">date</label>
+        <input type="date" name="date" id="date">
+        <br>
+
+        <label for="datetime">datetime-local</label>
+        <input type="datetime-local" name="datetime" id="datetime">
+        <br>
+
+        <label for="week">week</label>
+        <input type="week" name="week" id="week">
+        <br>
+
+        <label for="m">month</label>
+        <input type="month" name="month" id="m">
+        <br>
+        
+        <label for="colour">color</label>
+        <input type="color" name="color" id="colour">
+        <br>
+
+        <label for="age">Enter Age</label>
+        <input type="range" min="1" max="100" name="age" ip="age">
+        <br>
+
+
+
+        <button type="submit">submit</button>
+    </form>
+
+
+    
+
+    
+</body>
+</html>
