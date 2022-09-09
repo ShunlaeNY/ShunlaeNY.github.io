@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Pass</title>
+</head>
+<body>
+    <h1>Exam Pass</h1>
+    <p>Marks that are greater than or equal to 50 will pass the exam. The student will get a D* if each subject is greater than or equal to 81. And those who are below 50, fail.</p>
+    <form action="" name="my_form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="html">HTML</label>
+        <input type="number" name="html" id="html">
+        <br><br>
+        <label for="css">CSS</label>
+        <input type="number" name="css" id="css">
+        <br><br>
+        <label for="js">Java Script</label>
+        <input type="number" name="js" id="js">
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+    </form>
+    <script>
+        function result()
+        {
+            //fetch user's input
+            let name = document.my_form.name.value;
+            console.log(name);
+            let html = document.my_form.html.value;
+            console.log(html);
+            let css = document.my_form.css.value;
+            console.log(css);
+            let js = document.my_form.js.value;
+            console.log(js);
+
+            if( html < 0 || html > 100 || css < 0 || css > 100|| js < 0 || js > 100 )
+            {
+                alert('Input error!! Marks must be between 0 and 100!!! Stew Pig :3')
+            }
+            else   // 0 <= Marks <= 100
+            {
+                if( html < 50 || css < 50 || js < 50 )//one of marks < 50
+                {
+                    document.write(`<h1> ${name} fails the exam. </h1>`);
+                    document.write(`<p> HTML - ${html} Marks </p>`);
+                    document.write(`<p> CSS - ${css} Marks </p>`);
+                    document.write(`<p> JS - ${js} Marks </p>`);
+                }
+                else
+                {
+                    if ( html < 81 && css < 81 && js < 81 )//all marks < 81
+                    {
+                        document.write(`<h1> Congratulations!!<br> ${name} passes the exam. </h1>`);
+                        document.write(`<p> HTML - ${html} Marks </p>`);
+                        document.write(`<p> CSS - ${css} Marks </p>`);
+                        document.write(`<p> JS - ${js} Marks </p>`);
+                    }
+                    else
+                    {
+                        //1D
+                        if ( html >= 81 && css < 81 && js < 81 )//D in html
+                        {
+                        document.write(`<h1> Congratulations!!<br> ${name} passes the exam with D*. </h1>`);
+                        document.write(`<p> D* in HTML - ${html} Marks </p>`);
+                        document.write(`<p> CSS - ${css} Marks </p>`);
+                        document.write(`<p> JS - ${js} Marks </p>`);
+                        }
+                        else if ( css >= 81 && html < 81 && js < 81 ) //D in css
+                        {
+                        document.write(`<h1> Congratulations!!<br> ${name} passes the exam with D*. </h1>`);
+                        document.write(`<p> D* in CSS - ${css} Marks </p>`);
+                        document.write(`<p> HTML - ${html} Marks </p>`);
+                        document.write(`<p> JS - ${js} Marks </p>`);
+                        }
+                        else if ( js >= 81 && html < 81 && css < 81)// D in js
+                        {
+                        document.write(`<h1> Congratulations!!<br> ${name} passes the exam with D*. </h1>`);
+                        document.write(`<p> D* in JS - ${js} Marks </p>`);
+                        document.write(`<p> HTML - ${html} Marks </p>`);
+                        document.write(`<p> CSS - ${css} Marks </p>`);
+                        }
+                        //2D
+                        else if ( html >= 81 && css >= 81 && js < 81 )//D in html and css
+                        {
+                            document.write(`<h1> Congratulations!!<br> ${name} passes the exam with D*. </h1>`);
+                            document.write(`<p> D* in HTML - ${html} Marks </p>`);
+                            document.write(`<p> D* in CSS - ${css} Marks </p>`);
+                            document.write(`<p> JS - ${js} Marks </p>`);
+                        }
+                        else if ( html >= 81 && js >= 81 && css < 81 ) //D in html and js
+                        {
+                            document.write(`<h1> Congratulations!!<br> ${name} passes the exam with D*. </h1>`);
+                            document.write(`<p> D* in HTML - ${html} Marks </p>`);
+                            document.write(`<p> D* in JS - ${js} Marks </p>`);
+                            document.write(`<p> CSS - ${css} Marks </p>`);
+                        }
+                        else if ( css >= 81 && js >= 81 && html < 81 ) // D in js and css
+                        {
+                            document.write(`<h1> Congratulations!!<br> ${name} passes the exam with D*. </h1>`);
+                            document.write(`<p> D* in CSS - ${css} Marks </p>`);
+                            document.write(`<p> D* in JS - ${js} Marks </p>`);
+                            document.write(`<p> HTML - ${html} Marks </p>`);
+                        }
+
+
+                        //all D
+                        else 
+                        {
+                            document.write(`<h1> Congratulations!!<br> ${name} passes the exam with all D*. </h1>`);
+                            document.write(`<p> D* in HTML - ${html} Marks </p>`);
+                            document.write(`<p> D* in CSS - ${css} Marks </p>`);
+                            document.write(`<p> D* in JS - ${js} Marks </p>`);
+                        }
+
+                    }
+                }
+                
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

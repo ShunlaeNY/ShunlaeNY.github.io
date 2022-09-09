@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+    <script>
+        let firstName = 'Hein';
+        let lastName = "Min Htet";
+        console.log(typeof(firstName));
+        console.log(typeof(lastName));
+        console.log(firstName.length);//length of string
+        console.log(lastName.length);
+
+        //connect two strings// add space bar
+        let fullName = firstName.concat(' ',lastName);
+        console.log(fullName);
+        // console.log('My name is' + fullName);
+        console.log(`My name is ${fullName}`);
+        console.log(fullName[5]);
+        console.log(fullName.toUpperCase());
+        console.log(fullName.toLowerCase());
+        console.log(fullName.substr(5,3)); // cut the string (start point, length)
+
+        let rep = 'I want Yangon';
+        let rep_result = rep.replace('Yangon','Mandalay');//regular expression
+
+
+        let money = '10,156,500';
+        money = money.replace(/\,/g,'');//remove , and add 'space'
+        console.log(typeof(money));
+        money = Number(money);
+    </script>
+</body>
+</html>
