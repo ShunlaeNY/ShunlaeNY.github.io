@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //multi dimentional array array ထဲက array
+    
+        let multi = [['Mg', 'Ma','Ba'],[22,23,34],['Ygn', 'Mdy', 'Mkn']];
+        console.log(multi[0][1]);
+        console.log(multi[1][1]);
+        console.log(multi[2][1]);
+        console.log(multi[0][0]);
+
+        let fruit = [];
+        fruit[0] = 'apple';
+        fruit[1] = 'guava';
+        fruit[2] = 'Berry';
+        console.log(fruit);
+        console.log(fruit[2]);
+
+        //add array data  --> array.push နောက်ဆုံးအခန်းကဝင်
+        fruit.push('Banana');
+        console.log(fruit);
+
+        //ရှေ့ကနေထည့်
+        fruit.unshift('Cherry');
+        console.log(fruit);
+
+        //remove from last one
+        fruit.pop();
+        console.log(fruit);
+
+        //remove starting from front
+        fruit.shift();
+        console.log(fruit);
+
+        //sorting A - Z
+        fruit.sort();
+        console.log(fruit);
+
+        //sorting Z to A
+        fruit.reverse();
+        console.log(fruit);
+
+        //array to string
+        let fruit_str = fruit.toString();
+        console.log(fruit_str);
+        console.log(typeof(fruit_str));
+
+        //str to array
+        fruit = fruit_str.split(); //array but all in one room
+        console.log(fruit);
+
+        fruit = fruit_str.split(''); //array but one char one room
+        console.log(fruit);
+
+        fruit = fruit_str.split(','); //array after , is one room
+        console.log(fruit);
+
+        let arrA = [1,2,3];
+        let arrB = ['a','b','c'];
+        let arrC = arrA.concat(arrB);
+        console.log(arrC);
+
+        // let arrD = [...arrA, ...arrB, ... arrC];
+        // console.log(arrC);
+    </script>
+    
+</body>
+</html>
