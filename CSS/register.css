@@ -1,0 +1,79 @@
+.body{
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    width: 60%;
+    margin: auto;
+    
+}
+
+#classname:read-only{
+    background-color: rgb(246, 247, 235);
+
+}
+
+input[type='text'],input[type='email'],input[type='number'],input[type='date']{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+input[type='text']:focus,input[type='email']:focus,input[type='date']:focus,input[type='number']:focus{
+    border: 2px solid gainsboro;
+    background-color: rgb(250, 255, 179);
+
+}
+
+input[type='radio']:checked + label{
+    color: darkblue;
+
+}
+
+input[type='checkbox']:enabled + label{
+    color: yellow;
+    font-style: italic;
+}
+
+input[type='checkbox']:checked + label{
+    color: darkblue;
+    font-style: normal;
+
+}
+
+input[type='checkbox']:disabled + label{
+    color: #ccc;
+
+}
+
+ul li{
+    line-height: 50px;
+}
+
+li:first-child{
+    background-color: paleturquoise;
+}
+
+li:last-child{
+    background-color: brown;
+}
+li:nth-child(3){
+    background-color: chocolate;
+}
+
+p:empty{
+    height: 10px;
+    background-color: darkslategrey;
+    border-radius: 50px;
+}
+
+.thankyou{
+    text-align: center;
+}

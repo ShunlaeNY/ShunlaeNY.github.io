@@ -1,0 +1,189 @@
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* tag/element selector */
+small{
+    display: inline-block;
+    font-style: italic;
+    background-color: darkgray;
+    text-indent: 50px;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    line-height: 40px;
+    font-size: 24px;
+    color: brown;
+    
+}
+
+
+
+
+/* attribute selector */
+a[title='google']{
+    color: red;
+}
+
+input[type='button']{
+    color: crimson;
+}
+
+/* id_selector */
+#id_selector{
+    background-color: blueviolet;
+}
+
+/* classSelector */
+.classSelector{
+    color: blue;
+    font-size: x-large;
+    word-spacing: 10px;
+}
+
+/* descendent selector */
+.desc a{
+    color: red;
+
+}
+
+/* child selector */
+.child>a{
+    color:blue;
+}
+
+/* psuedo selector */
+a:link{
+    color: red;
+}
+
+a:hover{
+    color:yellowgreen;
+    letter-spacing: 3px;;
+}
+a:active{
+    color: green;
+}
+
+a:visited{
+    color:brown;
+}
+
+/* target selector */
+p:target{
+    color: darksalmon;
+    border: 1px solid black;
+}
+div:target{
+    color: green;
+}
+
+/* for border.html */
+.border1{
+    border: 10px outset palevioletred;
+}
+
+.borderwidth{
+    border-width: thin;
+    border-style: dashed;
+}
+.border2{
+    border-left: 4px solid salmon;
+    border-right: 4px solid salmon;
+    border-bottom: 4px solid salmon;
+}
+
+.borderstyle{
+    border-style: dashed solid;
+    
+}
+/* marginLesson */
+.margin1{
+    border: 1px solid black;
+    margin: 30px 50px;
+
+}
+
+.margin2{
+    margin-top: 50px;
+    border: 1px dotted black;
+    margin-left: 20px;
+}
+
+/* padding */
+.padding{
+    border: 2px solid saddlebrown;
+    padding: 20px;
+}
+
+/* layout */
+.inline{
+    border: 1px solid red;
+    width: 300px;
+    display: block;
+    
+}
+
+.block{
+    border: 1px solid red;
+    width: 300px;
+    display: inline-block;
+}
+
+/* floatlesson */
+.floatleft img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.floatright img{
+    width: 40%;
+    float: right;
+}
+
+/* gridlesson */
+.grid1 div,.grid2 div,.grid3 div,.grid4 div,.grid5 div,.grid6 div{
+    padding: 20px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6{
+    display: grid;
+    grid-template-columns: 100px auto auto;
+}
+
+.grid2{
+    grid-column-gap: 50px;
+}
+
+.grid3{
+    grid-row-gap: 40px;
+}
+
+.grid4{
+    /* grid-gap: 50px; */
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+}
+
+.colAdd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.RowAdd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

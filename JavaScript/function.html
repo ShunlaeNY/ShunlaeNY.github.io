@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        function myfun()
+        {
+            document.write('<h3>Hello Function</h3>');
+        }
+        myfun();
+
+        //func with parameter
+        function addResult(num1, num2)
+        {
+            let add_result = num1 + num2;
+            document.write(`<h3>Add result is ${add_result}.</h3>`);
+
+        }
+
+        addResult(3,7);
+
+        function subResult(num1 = 50 , num2 = 25)
+        {
+            let sub_result = num1 - num2 ;
+            document.write(`<h3>Sub result is ${sub_result}.</h3>`);
+        }
+
+        subResult();
+        subResult(120, 10);
+
+
+
+        function getSize (Length, width, height )
+        {
+            let area = Length * width ;
+            let volume = Length * width * height ;
+            return [area,volume];// return means the function is finished!
+            //return နှစ်ခါမပြန်ရ
+        }
+        
+        let area = getSize(3,4,5)[0];//fetching return with array
+        let volume = getSize(3,4,5)[1];
+        document.write(`<h3>Area is ${area}.</h3>`);
+        document.write(`<h3>Volume is ${volume}.</h3>`);
+
+
+        //object
+        let hotel = {
+            name : 'XYZ hotel',
+            room : 40,
+            booked : 25,
+            gym : true,
+            room_type :['twin', 'duplex','suite'],
+            checkavability : function()
+            {//ဒီ objထဲကဆိုပြီး this သုံး
+                return this.room - this.booked;
+            }
+        }
+
+
+        let hotelName = hotel.name;
+        document.write(`<h3> Hotel Name is ${hotelName}.</h3>`);
+        let roomFree = hotel.checkavability();
+        document.write(`<h3> Available room is ${roomFree}.</h3>`);
+
+        hotel.pool = false;
+        console.log(hotel);
+
+        delete hotel.pool;
+        console.log(hotel);
+
+    </script>
+</body>
+</html>

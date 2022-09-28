@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">CSS Manipulation with DOM</h1>
+    <button onclick="action()">Action</button>
+    <br><br>
+
+    <img src="js.jpeg" alt="JavaScript" width="400" height="200" id="img">
+
+    <br><br><br><br><br>
+    <!-- //cursor tin yin img ko big say chin -->
+    <img src="DOM.jpeg" alt="DOM" id="img2" width="400" height="200" onmouseover="big()" onmouseout="normal()">
+    <script>
+        function action()
+        {
+            // alert('HELLO FROM ACTION');
+            let img = document.querySelector('#img');
+            img.style.width = '680px';
+            img.style.height = '350px';
+
+            document.querySelector('#heading').style.color='red';
+            document.querySelector('#heading').style.backgroundColor ='black';
+
+
+        }
+        let img2 = document.querySelector('#img2');
+        function big()
+        {
+            console.log('big');
+            img2.style.width ='600px';
+            img2.style.heigh ='400px';
+
+        }
+        function normal()
+        {
+            console.log('normal');
+            img2.style.width ='400px';
+            img2.style.heigh ='200px';
+        }
+    </script>
+</body>
+</html>

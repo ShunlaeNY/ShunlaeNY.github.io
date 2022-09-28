@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changecolor()">Create textNote element and attributes</h1>
+    <p id="text_Node"></p>
+    <button onclick="create_textNode()">Create TextNote</button>
+
+    <br><br>
+    <button onclick="create_element()">Create Element</button>
+    <br><br>
+
+    <input type="text" name="name" id="name">
+    <button onclick="adding()">Add</button>
+
+    <ul id="ulist">
+        <li onclick="changebgcolor()" id="uli">Names</li>
+    </ul>
+
+    <script>
+        function create_textNode()
+        {
+            // alert ('hi from textNote');
+            let hi = document.createTextNode('Hello JS');
+            console.log(hi);
+
+            let p = document.querySelector('#text_Node');
+            p.appendChild(hi);
+
+        }
+
+        function create_element()
+        {
+            // alert ('hi from create_element');
+            let h3 = document.createElement('h3');
+            console.log();
+            h3.innerText = 'This is h3 element';
+            console.log(h3);
+            document.body.appendChild(h3);
+        }
+
+        function adding()
+        {
+            // alert('hello from adding');
+            let name = document.querySelector('#name').value;
+            console.log(name);
+
+            let list = document.createElement('li');
+            list.innerText = name;
+            console.log(list);
+            let ulist = document.querySelector('#ulist');
+            ulist.appendChild(list)
+;        }   
+            
+        function changecolor()
+        {// testing
+            // alert('hi from change color');
+            let heading = document.querySelector('#heading');
+            let attr = heading.getAttribute('style');
+            console.log(attr);
+            if(attr){
+                //removeattr
+                heading.removeAttribute('style');
+            }
+            else
+            {
+                //add new attr
+                heading.setAttribute('style','color:red');
+
+            }
+
+        }
+
+        function changebgcolor()
+        {
+            // alert('hi from changebgcolor');
+             let uli = document.querySelector('#uli');
+             let attr2 = uli.getAttribute('style');
+             console.log(attr2);
+
+             if(attr2){
+                //removeattr
+                heading.removeAttribute('style');
+            }
+            else
+            {
+                //add new attr
+                heading.setAttribute('style','backgroundColor:green');
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>
