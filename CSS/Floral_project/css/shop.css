@@ -1,0 +1,380 @@
+/* universal padding & margin set to zero */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* ***************************************** */
+
+/* LOGO */
+.logo{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    
+}
+.brand_name{
+    position: fixed;
+    top: 18px;
+    left: 93px;
+    font-family: pacifico;
+    color: goldenrod;
+    font-size: xx-large;
+    font-weight: unset;
+    
+}
+/* ***************************************** */
+
+/* For Navigation */
+.navbar ul{
+    float: right;
+    
+}
+.navbar div{
+    display: inline-block;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 30px;
+    /* padding: 40px; */
+}
+
+/* ***************************************** */
+
+/* Link Styling */
+.navbar ul li a:visited{
+    color: black;
+}
+.navbar ul li a:hover{
+    letter-spacing: 3px;
+    color: #266a79;
+    transition-duration: .6ms;
+}
+.navbar ul li a:active{
+    color: green;
+}
+.navbar ul li a:link{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Impact;
+}
+/* icon */
+.cart_noti{
+    position: relative;
+    top: -17px;
+    left: -7px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/* ***************************************** */
+
+/* fontstyle */
+@font-face{
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+    font-family: pacifico;
+}
+@font-face{
+    src: url(../fonts/Niconne/Niconne-Regular.ttf);
+    font-family: niconne;
+}
+/* ***************************************** */
+/* banner */
+.banner img{
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+}
+.banner_text{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+
+}
+.banner_text h1{
+    font-family: pacifico;
+    font-weight: unset;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.banner_text p{
+    font-family: niconne;
+    font-size: larger;
+    font-style: italic;
+}
+.shop_button{
+    color:#45aec5;
+    border: 1px solid #52c2db;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Impact;
+}
+.shop_button:hover{
+    color: goldenrod;
+    background-color: #266a79;
+    cursor: pointer;
+}
+/* ***************************************** */
+/* footer */
+.footer{
+    background-color: black;
+    color: grey;
+}
+
+.footer .center .a{
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.footer_icon{
+    color: grey;
+    display: inline-block;
+    margin: 20px 10px;
+}
+/* ***************************************** */
+/* ***************************************** */
+/* ***************************************** */
+/* ***************************************** */
+/* service */
+.service{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #b5e5f0;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.service_icon p{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.service_icon p span{
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+}
+
+.service_icon{
+    margin-top: 25px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* ***************************************** */
+
+/* shop Page */
+
+/* search_bar */
+.search_bar{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 330px;
+    border: 1px solid #266a79;
+    border-radius: 3px;
+    background-color: #b5e5f0;
+    width: 50%;
+    height: 40px;
+    font-size: x-large;
+}
+.fa-magnifying-glass{
+    background-color: #0aaace;
+    color: rgb(145, 135, 8);
+    border: 1px solid #053944;
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: 104px;
+    left: 931px;
+    border-radius: 5px;
+}
+.fa-magnifying-glass:hover{
+    background-color: blue;
+}
+/* ***************************************** */
+/* categories */
+
+.categories{
+    border: 2px solid #45aec5;
+    width: 20%;
+    height: 3in;
+    border-radius: 30px;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+
+}
+
+.categories .categories_hr{
+    font-family: pacifico;
+    font-weight: unset;
+    color: #053944;
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+.categories_hr_icon{
+    color: #45aec5;
+    text-align: center;
+}
+
+.categories .categories_list{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 30px;
+    font-family: niconne;
+    font-size: x-large;
+}
+
+/* category link styling*/
+.categories_list a{
+    text-decoration: none;
+    color: #15333a;
+}
+.categories_list a:hover{
+    color: goldenrod;
+}
+
+/* ***************************************** */
+.atc{
+    background-color: #b5e5f0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #52c2db;
+    font-family: impact;
+    color: #266a79;
+}
+
+.atc:hover{
+    color: goldenrod;
+    cursor: pointer;
+}
+/* item list */
+/* bouquet collection */
+.bouquet_collection{
+    width: 70%;
+    position: relative;
+    left: 3.5in;
+    top: 30px;
+}
+.bouquet_collection .bouquet{
+    width: 100%;
+    height: 3in;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px rgba(66, 66, 66, 0.1) ;
+}
+.bouquet_collection .item_list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* basket collection */
+.basket_collection{
+    width: 70%;
+    position: relative;
+    left: 3.5in;
+    top: 50px;
+}
+.basket_collection .basket{
+    width: 100%;
+    height: 3in;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px rgba(66, 66, 66, 0.1) ;
+}
+.basket_collection .item_list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* single collection */
+.single_collection{
+    width: 70%;
+    position: relative;
+    left: 3.5in;
+    top: 60px;
+}
+.single_collection .single{
+    width: 100%;
+    height: 3in;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px rgba(66, 66, 66, 0.1) ;
+}
+.single_collection .item_list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* birthday collection */
+.birthday_collection{
+    width: 70%;
+    position: relative;
+    left: 3.5in;
+    top: 60px;
+}
+.birthday_collection .birthday{
+    width: 100%;
+    height: 3in;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px rgba(66, 66, 66, 0.1) ;
+}
+.birthday_collection .item_list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* valentine collection */
+.valentine_collection{
+    width: 70%;
+    position: relative;
+    left: 3.5in;
+    top: 60px;
+}
+.valentine_collection .valentine{
+    width: 100%;
+    height: 3in;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px rgba(66, 66, 66, 0.1) ;
+}
+.valentine_collection .item_list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* ********************************** */
+.item_list img{
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0,.18);
+}
+
+/* ***************************************** */
